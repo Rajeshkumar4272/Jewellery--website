@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="dist/output.css" />
 </head>
 
-<body class="jost">
+<body>
     <main class="w-full min-h-screen">
         <header class="sticky top-0 z-50 border-b py-4 lg:py-10 flex items-center justify-center bg-slate-50">
             <nav>
@@ -60,17 +60,17 @@
             <form action="#">
                 <ul class="py-4 lg:py-6 space-y-5 lg:space-y-8 flex justify-evenly items-center flex-col">
                     <li>
-                        <div class="container border max-w-5xl shadow-md rounded-md">
+                        <div class="container border max-w-6xl shadow-md rounded-md">
                             <div class="grid grid-cols-1 row-auto lg:grid-cols-8 gap-y-4 lg:gap-x-4 p-4">
-                                <div class="col-span-3 border w-full rounded-md">
+                                <div class="col-span-3 border w-full aspect-square rounded-md">
                                     <img src="img/img1.jpeg" alt="img1" class="w-full h-full object-cover rounded-md" />
                                 </div>
                                 <div class="col-span-5">
-                                    <div class="flex">
-                                        <p class="font-semibold text-gray-700 max-w-xl ">
+                                    <div class="flex justify-between gap-6">
+                                        <h2 class="font-medium text-gray-600 max-w-2xl ">
                                             Oval Fresh Cut halo Engagement Set In 14K white Gold With A 1.00 Ct.H-Color
                                             VS2-Clarity Emerald Cut Diamond
-                                        </p>
+                                        </h2>
                                         <div class="flex  justify-center items-center gap-1  lg:-mt-5">
                                             <svg class="w-4 h-4 bg-black text-white rounded-full p-1 hidden lg:block"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
@@ -83,26 +83,29 @@
                                         </div>
                                     </div>
                                     <div class="pt-1">
-                                        <span class="text-gray-500">Item #:RB1077-WG14</span>
-                                        <p class="font-bold lg:text-xl">$1,258.78</p>
+                                        <span class="text-slate-600 font-medium">Item #:RB1077-WG14</span>
+                                        <p class="font-medium text-sm text-gray-600">$1,258.78</p>
                                     </div>
-                                    <div class="flex flex-col lg:flex-row gap-10 pt-4 ">
-                                        <div class="flex gap-10">
-                                            <div class="">
-                                                <label for="size" class="block pb-2 text-gray-700 font-semibold">Ring
+                                    <div
+                                        class="flex flex-col gap-4 lg:gap-9 lg:flex-row lg:justify-between pt-1 max-w-xl ">
+                                        <div class="flex  w-full  flex-wrap justify-between gap-y-2">
+                                            <div>
+                                                <label for="size"
+                                                    class="block text-gray-600 font-medium pb-1  text-sm">Ring
                                                     Size</label>
                                                 <select name="ring" id="size"
-                                                    class="border p-2 w-full lg:w-40 text-gray-700">
+                                                    class="border py-1 px-4  lg:w-40 text-gray-700">
                                                     <option value="1">Select Size</option>
                                                     <option value="1">1</option>
                                                 </select>
                                             </div>
                                             <div>
-                                                <label for="Quantity" class="block text-gray-700 font-semibold"
+                                                <label for="Quantity"
+                                                    class="block text-gray-700 font-medium pb-1 text-sm"
                                                     aria-label="Quantity00">Quantity</label>
-                                                <div class="flex items-center justify-center border  mt-2 relative ">
+                                                <div class="flex items-center justify-center    relative  ">
                                                     <button type="button" aria-label="minus-btn"
-                                                        class="absolute left-2">
+                                                        class="absolute left-2 z-10">
                                                         <svg class="w-6 h-6 text-gray-500" fill="currentColor"
                                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                                             <path
@@ -110,10 +113,10 @@
                                                             </path>
                                                         </svg>
                                                     </button>
-                                                    <input type="number" name="number" id="Quantity" readonly value="1"
-                                                        class="w-24 h-9 p-1 border pl-5 text-center">
+                                                    <input type="number" name="number1" id="Quantity" readonly value="1"
+                                                        class="w-24 h-9  border px-8  ">
                                                     <button type="button" aria-label="plus-btn"
-                                                        class="absolute right-2">
+                                                        class="absolute right-2 z-10">
                                                         <svg class="w-6 h-6 text-gray-500"
                                                             xmlns="http://www.w3.org/2000/svg" fill="none"
                                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -124,26 +127,30 @@
                                                     </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div>
                                             <div>
-                                                <fieldset>
-                                                    <legend class="text-gray-700 font-semibold">Would you like to add
-                                                        center stone</legend>
-                                                    <div class="flex gap-2 mt-4">
-                                                        <input type="radio" id="Yes" name="Stone" value="Y" checked>
-                                                        <label for="Yes">Yes</label><br />
+                                                <div>
+                                                    <fieldset>
+                                                        <legend
+                                                            class="text-gray-700 font-semibold whitespace-nowrap text-sm">
+                                                            Would you like to add
+                                                            center stone?</legend>
+                                                        <div class="flex gap-2 mt-2 items-center ">
+                                                            <input type="radio" id="Yes" name="Stone" value="Y"
+                                                                class="w-4 h-4 " checked>
+                                                            <label for="Yes">Yes</label><br />
 
-                                                        <input type="radio" id="No" name="Stone" value="N" />
-                                                        <label for="No">No</label><br />
-                                                    </div>
-                                                </fieldset>
+                                                            <input type="radio" id="No" name="Stone" value="N"
+                                                                class="w-4 h-4 ">
+                                                            <label for="No">No</label><br />
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pt-4">
+                                    <div class="pt-2">
                                         <div class="flex gap-2">
-                                            <p class="font-semibold">Select Protection Plans</p>
+                                            <p class="font-semibold text-gray-600">Select Protection Plans</p>
                                             <span><svg class="w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 32 32" fill="currentColor">
                                                     <path
@@ -152,8 +159,8 @@
                                                 </svg></span>
                                         </div>
                                     </div>
-                                    <div class="max-w-lg space-y-2">
-                                        <p class="text-slate-600 text-base">
+                                    <div class="max-w-xl">
+                                        <p class="text-slate-600 text-sm">
                                             Enjoy peace of mind with a Care Plan from Jeweller's Mutual.
                                         </p>
                                         <div class="flex pt-1">
@@ -161,7 +168,7 @@
                                                 <input type="radio" name="plans" id="noPlans" class="hidden peer"
                                                     checked>
                                                 <span
-                                                    class="flex items-center justify-center gap-1  py-2 border peer-checked:bg-blue-600 font-medium peer-checked:text-white">
+                                                    class="flex items-center justify-center gap-1  p-2 border text-sm peer-checked:bg-blue-600 font-medium peer-checked:text-white text-gray-600">
                                                     <svg class="w-6 h-6 text-white hidden lg:block" width="24"
                                                         height="24" viewBox="0 0 24 24" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -169,13 +176,13 @@
                                                             d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
                                                             fill="currentColor"></path>
                                                     </svg>
-                                                    <span class=" font-semibold">No Plans</span>
+                                                    <span class=" font-medium text-sm ">No Plan</span>
                                                 </span>
                                             </label>
                                             <label for="3years" class="flex-1">
                                                 <input type="radio" name="plans" id="3years" class="hidden peer" />
                                                 <span
-                                                    class="flex items-center justify-center gap-1 text-sm py-2 border peer-checked:bg-blue-600 font-medium peer-checked:text-white">
+                                                    class="flex items-center justify-center gap-1 text-sm p-2 border text-gray-600 peer-checked:bg-blue-600 font-medium peer-checked:text-white">
                                                     <svg class="w-6 h-6 text-white hidden lg:block" width="24"
                                                         height="24" viewBox="0 0 24 24" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -183,14 +190,15 @@
                                                             d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
                                                             fill="currentColor"></path>
                                                     </svg>
-                                                    <span class="font-bold jost">3 YEARS</span>
-                                                    <span class="font-semibold jost"> $180</span>
+                                                    <span class="font-medium whitespace-nowrap text-sm">3 YEARS $180
+                                                    </span>
+
                                                 </span>
                                             </label>
                                             <label for="4years" class="flex-1">
                                                 <input type="radio" name="plans" id="4years" class="hidden peer" />
                                                 <span
-                                                    class="flex items-center justify-center gap-1 text-sm py-2 border peer-checked:bg-blue-600 font-medium peer-checked:text-white">
+                                                    class="flex items-center justify-center gap-1 text-sm py-2 border text-gray-600 peer-checked:bg-blue-600 font-medium peer-checked:text-white">
                                                     <svg class="w-6 h-6 text-white hidden lg:block" width="24"
                                                         height="24" viewBox="0 0 24 24" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -198,16 +206,17 @@
                                                             d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
                                                             fill="currentColor"></path>
                                                     </svg>
-                                                    <span class="font-semibold whitespace-nowrap">Life time
+                                                    <span class="font-medium whitespace-nowrap">Life time $425.00
                                                     </span>
-                                                    <span class="font-semibold">$425.00</span>
+
                                                 </span>
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="pt-2">
-                                        <a href="#" class="relative  peer text flex gap-1">Want to add engraving?
-                                            <span class="text-blue-600 flex justify-center items-center ">
+                                    <div class="pt-1">
+                                        <a href="#" class="relative  peer text flex gap-1 text-sm">Want to add
+                                            engraving?
+                                            <span class="text-blue-600 flex justify-center items-center  text-sm">
                                                 <span class=" font-bold">
                                                     <svg class="w-4 h-4 font-extrabold" fill="currentColor"
                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -216,7 +225,7 @@
                                                         </path>
                                                     </svg>
                                                 </span>
-                                                Add Engraving <span class="font-extrabold pl-2">$30.00</span>
+                                                Add Engraving <span class="font-medium pl-1 ">$30.00</span>
                                             </span>
                                         </a>
                                         <div
@@ -282,72 +291,73 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="relative lg:pt-2">
-                                        <h3 class="font-bold">Matching items </h3>
-                                        <ul class="flex gap-4 items-center mt-2  invisible-scrollbar ">
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                        </ul>
-                                        <button type="button" aria-label="leftscroll"
-                                            class="absolute   left-4 h-20 top-10 block md:hidden">
-                                            <span
-                                                class="flex justify-center items-center p-2   bg-black text-white rounded-full">
-                                                <svg class="w-4 h-4" fill="currentColor"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
-                                                    <path
-                                                        d="M380.6 81.7c7.9 15.8 1.5 35-14.3 42.9L103.6 256 366.3 387.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-320-160C6.8 279.2 0 268.1 0 256s6.8-23.2 17.7-28.6l320-160c15.8-7.9 35-1.5 42.9 14.3z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-                                        </button>
-                                        <button type="button" aria-label="rightscroll"
-                                            class="absolute   right-4 h-20 top-10">
-                                            <span
-                                                class="flex justify-center items-center p-2   bg-black text-white rounded-full">
-                                                <svg class="w-4 h-4" fill="currentColor"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
-                                                    <path
-                                                        d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-                                        </button>
+                                    <div class="lg:pt-1">
+                                        <h3 class="font-semibold text-sm text-gray-600">Matching items </h3>
+                                        <div class="relative">
+                                            <ul class="flex gap-4 items-center mt-2  invisible-scrollbar ">
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                            </ul>
+                                            <button type="button" aria-label="leftscroll"
+                                                class="absolute  left-0 top-0 h-full w-fit  bg-gradient-to-r from-gray-300 block md:hidden">
+                                                <span
+                                                    class="flex justify-center items-center p-2   bg-black text-white rounded-full">
+                                                    <svg class="w-4 h-4" fill="currentColor"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                        <path
+                                                            d="M380.6 81.7c7.9 15.8 1.5 35-14.3 42.9L103.6 256 366.3 387.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-320-160C6.8 279.2 0 268.1 0 256s6.8-23.2 17.7-28.6l320-160c15.8-7.9 35-1.5 42.9 14.3z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <button type="button" aria-label="rightscroll"
+                                                class="absolute  right-0 top-0 h-full w-fit  bg-gradient-to-l from-gray-300">
+                                                <span
+                                                    class="flex justify-center items-center p-2   bg-black text-white rounded-full">
+                                                    <svg class="w-4 h-4" fill="currentColor"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 384 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                                        <path
+                                                            d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -359,10 +369,10 @@
                                         </div>
                                         <div class="flex-1">
                                             <div class="flex justify-between">
-                                                <h3 class="font-semibold">Complimentary Appraisal</h3>
-                                                <p class="font-black">$00.00</p>
+                                                <h3 class="font-medium text-gray-600">Complimentary Appraisal</h3>
+                                                <p class="font-semibold ">$00.00</p>
                                             </div>
-                                            <span class="text-sm text-slate-600">Item #: RB1077-WG14</span>
+                                            <span class="text-sm text-gray-600">Item #: RB1077-WG14</span>
                                             <button type="button" name="remove6"
                                                 class="absolute -top-2 -right-2 hidden group-hover:flex gap-1  p-1">
                                                 <span
@@ -386,10 +396,11 @@
                                         </div>
                                         <div class="flex-1">
                                             <div class="flex justify-between">
-                                                <h3 class="font-bold">Complimentary Appraisal</h3>
-                                                <p class="font-bold">$0.00</p>
+                                                <h3 class="font-medium text-sm text-gray-600">Complimentary Appraisal
+                                                </h3>
+                                                <p class="font-semibold">$0.00</p>
                                             </div>
-                                            <span class="text-sm text-slate-600">Item #: RB1077-WG14</span>
+                                            <span class="text-sm text-gray-600">Item #: RB1077-WG14</span>
                                             <button type="button" name="remove6"
                                                 class="absolute -top-2 -right-2 hidden group-hover:flex gap-1  p-1">
                                                 <span
@@ -409,14 +420,14 @@
                         </div>
                     </li>
                     <li>
-                        <div class="container border max-w-5xl shadow-md rounded-md">
+                        <div class="container border max-w-6xl shadow-md rounded-md">
                             <div class="grid grid-cols-1 row-auto lg:grid-cols-8 gap-y-4 lg:gap-x-4 p-4">
-                                <div class="col-span-3 border w-full rounded-md">
+                                <div class="col-span-3 border aspect-square w-full rounded-md">
                                     <img src="img/img1.jpeg" alt="img1" class="w-full h-full object-cover rounded-md" />
                                 </div>
                                 <div class="col-span-5">
-                                    <div class="flex">
-                                        <p class="font-semibold text-gray-700 max-w-xl ">
+                                    <div class="flex justify-between gap-6">
+                                        <p class="font-semibold text-gray-600 max-w-2xl ">
                                             Oval Fresh Cut halo Engagement Set In 14K white Gold With A 1.00 Ct.H-Color
                                             VS2-Clarity Emerald Cut Diamond
                                         </p>
@@ -432,24 +443,27 @@
                                         </div>
                                     </div>
                                     <div class="pt-1">
-                                        <span class="text-gray-500">Item #:RB1077-WG14</span>
-                                        <p class="font-bold lg:text-xl">$1,258.78</p>
+                                        <span class="text-gray-600">Item #:RB1077-WG14</span>
+                                        <p class="font-semibold lg:text-lg">$1,258.78</p>
                                     </div>
-                                    <div class="flex flex-col lg:flex-row gap-10 pt-4 ">
-                                        <div class="flex gap-10">
+                                    <!-- done -->
+                                    <div class="flex flex-col max-w-xl pt-3">
+                                        <div class="flex justify-between flex-wrap w-full ">
                                             <div class="">
-                                                <label for="size2" class="block pb-2 text-gray-700 font-semibold">Ring
+                                                <label for="size2"
+                                                    class="block pb-1 text-gray-700 font-semibold text-sm">Ring
                                                     Size</label>
                                                 <select name="ring2" id="size2"
-                                                    class="border p-2 w-full lg:w-40 text-gray-700">
+                                                    class="border py-1 px-2 w-full lg:w-40 text-gray-700">
                                                     <option value="1">Select Size</option>
                                                     <option value="1">1</option>
                                                 </select>
                                             </div>
                                             <div>
-                                                <label for="Quantity1" class="block text-gray-700 font-semibold"
+                                                <label for="Quantity1"
+                                                    class="block text-gray-700 pb-1 font-semibold text-sm"
                                                     aria-label="Quantity01">Quantity</label>
-                                                <div class="flex items-center justify-center border  mt-2 relative ">
+                                                <div class="flex items-center justify-center border   relative ">
                                                     <button type="button" aria-label="minus-btn1"
                                                         class="absolute left-2">
                                                         <svg class="w-6 h-6 text-gray-500" fill="currentColor"
@@ -460,7 +474,7 @@
                                                         </svg>
                                                     </button>
                                                     <input type="number" name="number1" id="Quantity1" readonly
-                                                        value="1" class="w-24 h-9 p-1 border pl-5 text-center">
+                                                        value="1" class="w-24 h-8  border  text-center">
                                                     <button type="button" aria-label="plus-btn1"
                                                         class="absolute right-2">
                                                         <svg class="w-6 h-6 text-gray-500"
@@ -473,14 +487,13 @@
                                                     </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div>
                                             <div>
                                                 <fieldset>
                                                     <legend class="text-gray-700 font-semibold">Would you like to add
-                                                        center stone</legend>
-                                                    <div class="flex gap-2 mt-4">
-                                                        <input type="radio" id="Yes2" name="Stone1" value="Y" checked>
+                                                        center stone?</legend>
+                                                    <div class="flex gap-2 mt-1 items-center border">
+                                                        <input type="radio" id="Yes2" name="Stone1" value="Y"
+                                                            class="w-4 h-4" checked>
                                                         <label for="Yes2">Yes</label><br />
 
                                                         <input type="radio" id="No2" name="Stone1" value="N" />
@@ -490,8 +503,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mt-4">
-                                        <div class="flex gap-2 ">
+                                    <div class="mt-3">
+                                        <div class="flex gap-2 items-center text-base text-gray-600">
                                             <p class="font-semibold ">Select Protection Plans</p>
                                             <span><svg class="w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 32 32" fill="currentColor">
@@ -501,16 +514,16 @@
                                                 </svg></span>
                                         </div>
                                     </div>
-                                    <div class="max-w-lg space-y-2">
-                                        <p class="text-gray-600">
+                                    <div class="max-w-xl border mt-1">
+                                        <p class="text-gray-600 text-sm">
                                             Enjoy peace of mind with a Care Plan from Jeweller's Mutual.
                                         </p>
-                                        <div class="flex">
+                                        <div class="flex ">
                                             <label for="noPlans2" class="flex-1">
                                                 <input type="radio" name="plans1" id="noPlans2" class="hidden peer"
                                                     checked />
                                                 <span
-                                                    class="flex items-center justify-center gap-1  py-2 border peer-checked:bg-blue-600 font-medium peer-checked:text-white">
+                                                    class="flex items-center justify-center gap-1  py-2  border peer-checked:bg-blue-600 font-medium peer-checked:text-white">
                                                     <svg class="w-6 h-6 text-white hidden lg:block" width="24"
                                                         height="24" viewBox="0 0 24 24" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -518,7 +531,7 @@
                                                             d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
                                                             fill="currentColor"></path>
                                                     </svg>
-                                                    <span class=" ">No Plans</span>
+                                                    <span class="text-sm ">No Plans</span>
                                                 </span>
                                             </label>
                                             <label for="3years2" class="flex-1">
@@ -532,8 +545,7 @@
                                                             d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
                                                             fill="currentColor"></path>
                                                     </svg>
-                                                    <span class="text-sm">3 years</span>
-                                                    <span class="text-sm">$180</span>
+                                                    <span class="text-sm whitespace-nowrap">3 years $180</span>
                                                 </span>
                                             </label>
                                             <label for="4years2" class="flex-1">
@@ -547,18 +559,18 @@
                                                             d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
                                                             fill="currentColor"></path>
                                                     </svg>
-                                                    <span class=" whitespace-nowrap">Life time
+                                                    <span class=" whitespace-nowrap text-sm">Life time $425.00
                                                     </span>
-                                                    <span class="">$425.00</span>
+                                                    <span class=""></span>
                                                 </span>
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="py-4">
+                                    <div class="">
                                         <div class="flex items-center gap-4">
-                                            <P class="text-gray-500"> Engraving: Script Lettering </P>
-                                            <span class="font-bold text-slate-800">"Ucodesoft"</span>
-                                            <svg class="w-6 h-6 bg-gray-600 text-white p-1 rounded-full"
+                                            <P class="text-gray-500 text-sm"> Engraving: Script Lettering </P>
+                                            <span class="font-bold text-slate-800 text-sm">"Ucodesoft"</span>
+                                            <svg class="w-4 h-4 bg-gray-600 text-white p-1 rounded-full"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
                                                 fill="currentColor">
                                                 <path
@@ -567,140 +579,75 @@
                                             </svg>
                                         </div>
 
-                                        <!-- <a href="#" class="relative  peer text">Want to add something?
-                                            <span class="text-blue-600"><span class="text-2xl">+</span> Add Engraving
-                                                $30.00</span>
-                                        </a> -->
-                                        <!-- <div
-                                            class="fixed z-10 inset-0 flex justify-evenly items-center invisible  peer-focus:visible ">
-                                            <div class="max-w-lg  border space-y-4 p-4 rounded-md bg-white  ">
-                                                <div class="flex justify-end">
-                                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 15 15" fill="currentColor">
+
+                                    </div>
+                                    <div class=" mt-2">
+                                        <h3 class="text-gray-600 font-medium text-sm">Matching items </h3>
+                                        <div class="relative">
+                                            <ul class="flex gap-4 items-center mt-2  invisible-scrollbar ">
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                                <li class="w-20 rounded-md border  shrink-0">
+                                                    <img src="img/img1.jpeg" alt="img1"
+                                                        class="w-full h-full object-cover rounded-md">
+                                                </li>
+                                            </ul>
+                                            <button type="button" aria-label="leftscroll1"
+                                                class="absolute  left-0 top-0 h-full w-fit  bg-gradient-to-r from-gray-300 block md:hidden">
+                                                <span
+                                                    class="flex justify-center items-center p-2   bg-black text-white rounded-full">
+                                                    <svg class="w-4 h-4" fill="currentColor"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                         <path
-                                                            d="M3.64 2.27L7.5 6.13L11.34 2.29C11.5114 2.1076 11.7497 2.0029 12 2C12.5523 2 13 2.4477 13 3C13.0047 3.2478 12.907 3.4866 12.73 3.66L8.84 7.5L12.73 11.39C12.8948 11.5512 12.9915 11.7696 13 12C13 12.5523 12.5523 13 12 13C11.7423 13.0107 11.492 12.9127 11.31 12.73L7.5 8.87L3.65 12.72C3.4793 12.8963 3.2453 12.9971 3 13C2.4477 13 2 12.5523 2 12C1.9953 11.7522 2.093 11.5134 2.27 11.34L6.16 7.5L2.27 3.61C2.1052 3.4488 2.0085 3.2304 2 3C2 2.4477 2.4477 2 3 2C3.2404 2.0029 3.4701 2.0998 3.64 2.27Z">
+                                                            d="M380.6 81.7c7.9 15.8 1.5 35-14.3 42.9L103.6 256 366.3 387.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-320-160C6.8 279.2 0 268.1 0 256s6.8-23.2 17.7-28.6l320-160c15.8-7.9 35-1.5 42.9 14.3z">
                                                         </path>
                                                     </svg>
-                                                </div>
-                                                <h3 class="font-semibold text-blue-600 text-center text-xl">
-                                                    ENGRAVE YOUR RING
-                                                </h3>
-                                                <p class="text-sm text-slate-600 text-center">
-                                                    You can choose between our standard block font or a
-                                                    script font as shown here and enter your text below.
-                                                    For enggraving of more than fourteen Characters,
-                                                    discuss with customer service after completing your
-                                                    order
-                                                </p>
-                                                <div class="flex gap-4 w-full justify-evenly items-center">
-                                                    <div class="flex-1  ">
-                                                        <img src="img/img1.jpeg" alt="img1"
-                                                            class="w-full h-full object-cover rounded-md" />
-                                                    </div>
-                                                    <div class="flex-1 h-full flex flex-col gap-5">
-
-                                                        <div>
-                                                            <div>
-                                                                <label for="Text2" class="text-lg">Engraving
-                                                                    text</label>
-                                                                <input type="text" name="Text" id="Text2"
-                                                                    class="w-full h-10 p-4  border placeholder:font-semibold"
-                                                                    placeholder="Enter Text" />
-                                                            </div>
-                                                            <div class="flex border-black border">
-                                                                <label for="Block3"
-                                                                    class="flex-1 border-black border-r-2 p-2">
-                                                                    <input type="radio" name="Color" id="Block3"
-                                                                        class="hidden" />
-                                                                    <a href="#" class="text-gray-500 font-medium">
-                                                                        BlOCK
-                                                                    </a>
-                                                                </label>
-                                                                <label for="Block4" class="flex-1 p-2">
-                                                                    <input type="radio" name="Color" id="Block4"
-                                                                        class="hidden" />
-                                                                    <a href="#"
-                                                                        class="py-2 text-gray-500 text-center font-medium">
-                                                                        SCRIPT
-                                                                    </a>
-                                                                </label>
-                                                            </div>
-                                                            <button type="submit"
-                                                                class="bg-blue-700 text-white w-full rounded py-2 font-semibold">
-                                                                Submit
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                    <div class="relative">
-                                        <h3 class="text-gray-600 font-bold">Matching items </h3>
-                                        <ul class="flex gap-4 items-center mt-2  invisible-scrollbar ">
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                            <li class="w-20 rounded-md border  shrink-0">
-                                                <img src="img/img1.jpeg" alt="img1"
-                                                    class="w-full h-full object-cover rounded-md">
-                                            </li>
-                                        </ul>
-                                        <button type="button" aria-label="leftscroll"
-                                            class="absolute   left-4 h-20 top-10 block md:hidden">
-                                            <span
-                                                class="flex justify-center items-center p-2   bg-black text-white rounded-full">
-                                                <svg class="w-4 h-4" fill="currentColor"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
-                                                    <path
-                                                        d="M380.6 81.7c7.9 15.8 1.5 35-14.3 42.9L103.6 256 366.3 387.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-320-160C6.8 279.2 0 268.1 0 256s6.8-23.2 17.7-28.6l320-160c15.8-7.9 35-1.5 42.9 14.3z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-                                        </button>
-                                        <button type="button" aria-label="rightscroll"
-                                            class="absolute   right-4 h-20 top-10">
-                                            <span
-                                                class="flex justify-center items-center p-2   bg-black text-white rounded-full">
-                                                <svg class="w-4 h-4" fill="currentColor"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
-                                                    <path
-                                                        d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-                                        </button>
+                                                </span>
+                                            </button>
+                                            <button type="button" aria-label="rightscroll1"
+                                                class="absolute  right-0 top-0 h-full w-fit  bg-gradient-to-l from-gray-300">
+                                                <span
+                                                    class="flex justify-center items-center p-2   bg-black text-white rounded-full">
+                                                    <svg class="w-4 h-4" fill="currentColor"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 384 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                                        <path
+                                                            d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -715,7 +662,7 @@
                                                 <h3 class="font-bold">Complimentary Appraisal</h3>
                                                 <p class="font-bold"> $0.00</p>
                                             </div>
-                                            <span class="text-sm text-slate-600">Item #: RB1077-WG14</span>
+                                            <span class="text-sm text-gray-600">Item #: RB1077-WG14</span>
                                             <button type="button" name="remove6"
                                                 class="absolute -top-2 -right-2 hidden group-hover:flex gap-1  p-1">
                                                 <span
@@ -787,7 +734,7 @@
                     </li>
                 </ul>
                 <div class="flex justify-evenly ">
-                    <div class="container border max-w-5xl shadow">
+                    <div class="container border max-w-6xl shadow">
                         <div class="grid  grid-cols-1 lg:grid-cols-8 lg:gap-8 p-4">
                             <div class="col-span-4 space-y-5">
                                 <div class="space-y-2">
@@ -796,42 +743,50 @@
                                         class="w-full resize-none border rounded p-2"
                                         placeholder="Enter something?"></textarea>
                                 </div>
-                                <div class="space-y-12">
+                                <div class="space-y-10">
                                     <div class="flex flex-col justify-between">
-                                        <h4 class="font-bold text-lg">Shipping</h4>
+                                        <h4 class="font-medium pb-4">Shipping</h4>
                                         <div class="flex justify-between text-gray-500">
-                                            <p>Estimated Shipping Date</p>
-                                            <span>Shipping method </span>
+                                            <p class="text-sm">Estimated Shipping Date</p>
+                                            <span class="text-sm"> Shipping method </span>
                                         </div>
                                         <div class="flex justify-between text-gray-500 font-semibold">
                                             <p>Friday, August112023 </p>
                                             <span>Free FedEx Overnigh </span>
                                         </div>
                                     </div>
-                                    <div class="w-full p-2  border rounded bg-gray-50 text-gray-500 text-sm">
+                                    <div class="w-full p-4 border rounded bg-gray-50 text-gray-500 text-sm">
                                         <!-- <p>
                                             Lorem ipsum, dolor sit amet consectetur
                                             <span class="text-black font-normal">09877-65476</span> elit.
                                             Harum, perspiciatis.
                                         </p> -->
-                                        <address>
+                                        <address class="address">
                                             <p>For Saturday delivery, call customer services at <a
                                                     href="tel:+8776275094" class="font-bold text-black">877-627-5094</a>
                                                 APO/FPO orders will ship via USPS Priority Mail.
                                             </p>
                                         </address>
-                                        <div class="flex justify-between">
-                                            <p>View our <a href="#" class="text-blue-600 underline"> Shipping Polocy
-                                                    and Expedite
-                                                    Options</a></p>
-                                            <p>for phone order please mention: <span
-                                                    class="font-bold text-black">QFPHUG3</span></p>
-                                        </div>
+                                        <address class=" address flex justify-between  pt-3  ">
+                                            <div>
+
+                                                <p class="text-sm whitespace-nowrap">View our <a href="#"
+                                                        class=" text-blue-600 underline">
+                                                        Shipping Polocy
+                                                        and Expedite
+                                                        Options</a></p>
+                                            </div>
+                                            <div>
+                                                <p class="text-sm whitespace-nowrap">for phone order please mention:
+                                                </p>
+                                                <span class="font-bold text-black">QFPHUG3</span>
+                                            </div>
+                                        </address>
                                     </div>
                                 </div>
 
                             </div>
-                            <div class="col-span-4 flex flex-col justify-between ">
+                            <div class="col-span-4 -mt-3 flex flex-col justify-between  ">
                                 <div class="">
                                     <dl class="divide-y border-b" aria-label="Subtotal">
                                         <div class="flex justify-between py-2 sm:py-4">
@@ -852,15 +807,17 @@
                                         </div>
                                     </dl>
                                 </div>
-                                <div class="space-y-8">
-                                    <div class="space-y-4 relative">
+                                <div class="space-y-6">
+                                    <div class="space-y-8 relative ">
 
-                                        <label for="CouponCode" class="font-semibold flex flex-col  ">CouponCode</label>
-                                        <input type="text" class="h-12 w-full border  rounded px-1 " id="CouponCode"
+                                        <label for="CouponCode"
+                                            class="font-medium text-sm text-slate-600 flex flex-col  ">CouponCode</label>
+                                        <input type="text" class="h-12 w-full border  rounded px-2 " id="CouponCode"
                                             placeholder="Enter the code">
-                                        <a href="#" class="absolute top-9 right-2 text-blue-600">Apply</a>
+                                        <a href="#"
+                                            class="absolute top-9 right-2 text-blue-600 font-medium text-sm">Apply</a>
                                     </div>
-                                    <button type="submit" class="bg-blue-600 text-white rounded p-3 w-full">
+                                    <button type="submit" class="bg-blue-600 text-white rounded p-4 text-lg w-full">
                                         Continue
                                     </button>
                                 </div>
@@ -873,9 +830,9 @@
 
         </section>
         <div class="py-20">
-            <h2 class=" text-center font-semibold  ">Payment Choices with Flexibility </h2>
+            <h4 class=" text-center font-semibold text-lg ">Payment Choices with Flexibility </h4>
             <div class="flex justify-evenly  items-center ">
-                <ul class="container max-w-5xl p-4 border grid grid-cols-2 lg:grid-cols-6 gap-10 place-items-center">
+                <ul class="container max-w-6xl p-4  grid grid-cols-2 lg:grid-cols-6 gap-10 place-items-center">
                     <li>
                         <a href="#" class="">
                             <figure class="h-full w-24 flex flex-col gap-2  items-center">
@@ -946,103 +903,99 @@
             </div>
         </div>
 
-        <div class="flex justify-evenly items-center bg-slate-50">
-            <div class="container max-w-5xl p-4 grid grid-cols-2 lg:grid-cols-6 gap-10">
+        <div class="flex justify-evenly items-center bg-slate-50 h-fit">
+            <div class="container max-w-6xl pt-8  pb-20 grid grid-cols-2 lg:grid-cols-6">
                 <div class="col-span-8 ">
-                    <div class="space-y-10">
-                        <div class="space-y-1">
-                            <h2 class="font-bold">Keep Your Jewellery sparkling and Safe </h2>
-                            <p class="text-gray-500">Adiamor offer care plans and cleaners to offer you peace pf
-                                mind when making your purchase </p>
-                        </div>
-                        <div class="flex flex-1 justify-between items-center">
-                            <a href="#" class="bg-blue-600 text-white p-2 ">Purchase a care plan </a>
-                            <a href="#" class=" text-blue-600 underline">Explore All </a>
-                        </div>
+                    <h2 class="font-medium text-lg pb-1 ">Keep Your Jewellery sparkling and Safe </h2>
+                    <p class="text-gray-500 text-sm ">Adiamor offer care plans and cleaners to offer you peace pf
+                        mind when making your purchase </p>
+                    <div class="flex flex-1 justify-between mt-8">
+                        <a href="#" class="bg-blue-600 text-white p-3 text-sm  ">Purchase a care plan </a>
+                        <a href="#" class=" text-blue-600 underline text-sm ">Explore All </a>
                     </div>
-                    <div class="mt-10">
-                        <ul class="grid  grid-cols-2 row-auto lg:grid-cols-6  gap-8">
-                            <li>
+
+                    <ul class="grid  grid-cols-2 row-auto lg:grid-cols-6 mt-6 ">
+                        <li>
+                            <div class="flex flex-col items-center  px-8 ">
                                 <div class="w-32 border bg-white rounded-md">
-                                    <img src="img/img1.jpeg" alt="details" class="w-full h-full object-cover">
+                                    <img src="img/img1.jpeg" alt="details"
+                                        class="w-full h-full object-cover rounded-md">
                                 </div>
-                                <div class="flex flex-col justify-center items-center pt-6 gap-2">
-                                    <p class="font-semibold">Foaming Cleaners</p>
-                                    <p class="font-bold">$12.00</p>
-                                    <a href="#"
-                                        class="border-blue-600 rounded border py-1 px-2 text-blue-600 hover:bg-blue-600 hover:text-white ">Add
-                                        To Cart</a>
-
-                                </div>
-                            </li>
-                            <li>
+                                <p class="font-semibold pt-5 whitespace-nowrap">Foaming Cleaners</p>
+                                <p class="font-bold pt-2">$12.00</p>
+                                <a href="#"
+                                    class="border-blue-600 mt-2 w-full text-center rounded border py-1 px-2 text-blue-600 hover:bg-blue-600 hover:text-white ">Add
+                                    To Cart</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-col items-center  px-8 ">
                                 <div class="w-32 border bg-white rounded-md">
-                                    <img src="img/img1.jpeg" alt="details" class="w-full h-full object-cover">
+                                    <img src="img/img1.jpeg" alt="details"
+                                        class="w-full h-full object-cover rounded-md">
                                 </div>
-                                <div class="flex flex-col justify-center items-center pt-6 gap-2">
-                                    <p class="font-semibold">Foaming Cleaners</p>
-                                    <p class="font-bold">$12.00</p>
-                                    <a href="#"
-                                        class="border-blue-600 rounded border py-1 px-2 text-blue-600 hover:bg-blue-600 hover:text-white ">Add
-                                        To Cart</a>
-
-                                </div>
-                            </li>
-                            <li>
+                                <p class="font-semibold pt-5 whitespace-nowrap">Foaming Cleaners</p>
+                                <p class="font-bold pt-2">$12.00</p>
+                                <a href="#"
+                                    class="border-blue-600 mt-2 w-full text-center rounded border py-1 px-2 text-blue-600 hover:bg-blue-600 hover:text-white ">Add
+                                    To Cart</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-col items-center  px-8 ">
                                 <div class="w-32 border bg-white rounded-md">
-                                    <img src="img/img1.jpeg" alt="details" class="w-full h-full object-cover">
+                                    <img src="img/img1.jpeg" alt="details"
+                                        class="w-full h-full object-cover rounded-md">
                                 </div>
-                                <div class="flex flex-col justify-center items-center pt-6 gap-2">
-                                    <p class="font-semibold">Foaming Cleaners</p>
-                                    <p class="font-bold">$12.00</p>
-                                    <a href="#"
-                                        class="border-blue-600 rounded border py-1 px-2 text-blue-600 hover:bg-blue-600 hover:text-white ">Add
-                                        To Cart</a>
-
-                                </div>
-                            </li>
-                            <li>
+                                <p class="font-semibold pt-5 whitespace-nowrap">Foaming Cleaners</p>
+                                <p class="font-bold pt-2">$12.00</p>
+                                <a href="#"
+                                    class="border-blue-600 mt-2 w-full text-center rounded border py-1 px-2 text-blue-600 hover:bg-blue-600 hover:text-white ">Add
+                                    To Cart</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-col items-center  px-8 ">
                                 <div class="w-32 border bg-white rounded-md">
-                                    <img src="img/img1.jpeg" alt="details" class="w-full h-full object-cover">
+                                    <img src="img/img1.jpeg" alt="details"
+                                        class="w-full h-full object-cover rounded-md">
                                 </div>
-                                <div class="flex flex-col justify-center items-center pt-6 gap-2">
-                                    <p class="font-semibold">Foaming Cleaners</p>
-                                    <p class="font-bold">$12.00</p>
-                                    <a href="#"
-                                        class="border-blue-600 rounded border py-1 px-2 text-blue-600 hover:bg-blue-600 hover:text-white ">Add
-                                        To Cart</a>
-
-                                </div>
-                            </li>
-                            <li>
+                                <p class="font-semibold pt-5 whitespace-nowrap">Foaming Cleaners</p>
+                                <p class="font-bold pt-2">$12.00</p>
+                                <a href="#"
+                                    class="border-blue-600 mt-2 w-full text-center rounded border py-1 px-2 text-blue-600 hover:bg-blue-600 hover:text-white ">Add
+                                    To Cart</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-col items-center  px-8 ">
                                 <div class="w-32 border bg-white rounded-md">
-                                    <img src="img/img1.jpeg" alt="details" class="w-full h-full object-cover">
+                                    <img src="img/img1.jpeg" alt="details"
+                                        class="w-full h-full object-cover rounded-md">
                                 </div>
-                                <div class="flex flex-col justify-center items-center pt-6 gap-2">
-                                    <p class="font-semibold">Foaming Cleaners</p>
-                                    <p class="font-bold">$12.00</p>
-                                    <a href="#"
-                                        class="border-blue-600 rounded border py-1 px-2 text-blue-600 hover:bg-blue-600 hover:text-white ">Add
-                                        To Cart</a>
-
-                                </div>
-                            </li>
-                            <li>
+                                <p class="font-semibold pt-5 whitespace-nowrap">Foaming Cleaners</p>
+                                <p class="font-bold pt-2">$12.00</p>
+                                <a href="#"
+                                    class="border-blue-600 mt-2 w-full text-center rounded border py-1 px-2 text-blue-600 hover:bg-blue-600 hover:text-white ">Add
+                                    To Cart</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-col items-center  px-8 ">
                                 <div class="w-32 border bg-white rounded-md">
-                                    <img src="img/img1.jpeg" alt="details" class="w-full h-full object-cover">
+                                    <img src="img/img1.jpeg" alt="details"
+                                        class="w-full h-full object-cover rounded-md">
                                 </div>
-                                <div class="flex flex-col justify-center items-center pt-6 gap-2">
-                                    <p class="font-semibold">Foaming Cleaners</p>
-                                    <p class="font-bold">$12.00</p>
-                                    <a href="#"
-                                        class="border-blue-600 rounded border py-1 px-2 text-blue-600 hover:bg-blue-600 hover:text-white ">Add
-                                        To Cart</a>
+                                <p class="font-semibold pt-5 whitespace-nowrap">Foaming Cleaners</p>
+                                <p class="font-bold pt-2">$12.00</p>
+                                <a href="#"
+                                    class="border-blue-600 mt-2 w-full text-center rounded border py-1 px-2 text-blue-600 hover:bg-blue-600 hover:text-white ">Add
+                                    To Cart</a>
+                            </div>
+                        </li>
 
-                                </div>
-                            </li>
+                    </ul>
 
-                        </ul>
-                    </div>
                 </div>
 
             </div>
